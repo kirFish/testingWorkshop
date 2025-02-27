@@ -76,7 +76,7 @@ public class LogicMainTest {
         String value2 = "11/n25/n24";
 
 
-        assertEquals( 60, mainInstance.fifthTask(value2));
+        assertEquals( 60, mainInstance.fifthTask(value));
         assertEquals( 60, mainInstance.fifthTask(value2));
 
     }
@@ -84,9 +84,7 @@ public class LogicMainTest {
     @Test
     public void sixthTaskTest(){
 
-        //given
         String value = "-10";
-
 
         try{
            mainInstance.sixthTask(value);

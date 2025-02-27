@@ -94,8 +94,6 @@ public class LogicMain {
             argArr = Arrays.asList(originalValue.split(",|\n"));
         }
 
-        argArr.removeFirst();
-
         return Integer.parseInt(argArr.get(1)) + Integer.parseInt(argArr.get(2)) + Integer.parseInt(argArr.get(3)) + Integer.parseInt(argArr.get(4))  ;
     }
 
