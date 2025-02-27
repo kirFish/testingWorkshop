@@ -2,8 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class LogicMain {
 
     private String text = "";
@@ -80,8 +79,6 @@ public class LogicMain {
 
     public int eighthTask(String value) {
 
-
-
         List<String> argArr;
 
         char delimiter = value.charAt(value.indexOf("//") +2 );
@@ -97,11 +94,12 @@ public class LogicMain {
         return Integer.parseInt(argArr.get(1)) + Integer.parseInt(argArr.get(2)) + Integer.parseInt(argArr.get(3)) + Integer.parseInt(argArr.get(4))  ;
     }
 
+    //9. A multi char delimiter can be defined on the first line (e.g. //[###] for ‘###’ as the delimiter)
     public int ninthTask(String value) throws NumberFormatException{
         return 0;
     }
 
-
+    //10. Many single or multi-char delimiters can be defined (each wrapped in square brackets)
     public int tenthTask(String value) {
 
         return 0;
