@@ -1,12 +1,48 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class LogicMain {
+
+    private String text = "";
     public static void main(String[] args) {
 
-        String text="Hello World";
-        firstTask(text);
+
     }
 
-    private static void firstTask(String text) {
+    LogicMain() {
     }
+
+    LogicMain(String text) {
+        this.text = text;
+    }
+
+    public int firstTask(String text) {
+
+        if(text.isEmpty()){
+            return 0;
+        }else{
+            return 1;
+        }
+    }
+
+
+    public int secondTask(int value) {
+        return value;
+    }
+
+
+    public int thirdTask(String value) {
+        String[] argArr = value.split(",");
+        return Integer.parseInt(argArr[0]) + Integer.parseInt(argArr[1]);
+    }
+
+
+    public int fourthTask(String value) {
+        String[] argArr = value.split("/n");
+        return Integer.parseInt(argArr[0]) + Integer.parseInt(argArr[1]);
+    }
+
+
+
+
+
 }
