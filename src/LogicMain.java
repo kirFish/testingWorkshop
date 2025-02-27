@@ -41,7 +41,23 @@ public class LogicMain {
         return Integer.parseInt(argArr[0]) + Integer.parseInt(argArr[1]);
     }
 
+    public int fifthTask(String value) throws NumberFormatException{
+        if(Integer.valueOf(value) < 0){
+            throw new NumberFormatException();
+        }
 
+        return 1;
+    }
+
+
+    public String sixthTask(String value) {
+
+        String result = value;
+        if(Integer.valueOf(value) > 1000){
+            result = "";
+        }
+        return result;
+    }
 
 
 

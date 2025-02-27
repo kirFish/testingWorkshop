@@ -3,6 +3,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 
 public class LogicMainTest {
@@ -65,5 +66,31 @@ public class LogicMainTest {
 
         //then
         assertEquals( result, expectedResult);
+    }
+
+    @Test
+    public void fifthTaskTest(){
+
+
+        String value = "-11";
+
+        try{
+            mainInstance.fifthTask(value);
+        }catch(Exception ignore){
+
+        }
+    }
+
+    @Test
+    public void sixthTaskTest(){
+
+        //given
+        String value = "1001";
+
+        //when
+        String result = mainInstance.sixthTask(value);
+
+        //then
+        assertTrue( result.isEmpty());
     }
 }
