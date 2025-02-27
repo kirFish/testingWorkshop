@@ -72,25 +72,47 @@ public class LogicMainTest {
     public void fifthTaskTest(){
 
 
-        String value = "-11";
+        String value = "11,25,24";
+        String value2 = "11/n25/n24";
 
-        try{
-            mainInstance.fifthTask(value);
-        }catch(Exception ignore){
 
-        }
+        assertEquals( 60, mainInstance.fifthTask(value2));
+        assertEquals( 60, mainInstance.fifthTask(value2));
+
     }
 
     @Test
     public void sixthTaskTest(){
 
         //given
+        String value = "-10";
+
+
+        try{
+           mainInstance.sixthTask(value);
+        }catch(Exception ignore){}
+    }
+
+    @Test
+    public void seventhTaskTest(){
+
         String value = "1001";
 
-        //when
-        String result = mainInstance.sixthTask(value);
+        String result =  mainInstance.seventhTask(value);
 
-        //then
-        assertTrue( result.isEmpty());
+        assertEquals( "", result);
+
+    }
+
+
+    @Test
+    public void eighthTaskTest(){
+
+        String value = "//#5#4,3\n2";
+
+        int result =  mainInstance.eighthTask(value);
+
+        assertEquals( 14, result);
+
     }
 }
